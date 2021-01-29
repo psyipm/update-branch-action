@@ -1,0 +1,12 @@
+name: Update branch action
+description: Pulls recent changes from base branch on comment
+inputs:
+  token:
+    required: true
+    description: Token to perform api calls
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: git-pull-request
+  color: green
